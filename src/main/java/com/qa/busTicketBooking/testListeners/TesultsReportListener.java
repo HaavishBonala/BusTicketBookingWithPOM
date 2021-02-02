@@ -90,7 +90,7 @@ public class TesultsReportListener extends BasePage implements ITestListener {
 		// Map<String, Object> to hold your test results data.
 		Map<String, Object> data = new HashMap<String, Object>();
 		data.put("target",
-				"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODA0OTgzLTNkZjAtNDdjZC1hOWRlLWM5MjMwNmVkNjRjYi0xNjA5NzY1MjMxNDQzIiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiYjQ2OWRmMjItNDIzZi00NTFjLWFkZWUtZWYyOWY4OWIwOThhIiwidHlwZSI6InQifQ.MllCO9jj_D4LAKBzYavbr_2xMfejEtvrmx1bV7gyQns");
+				"----your token----");
 
 		Map<String, Object> results = new HashMap<String, Object>();
 		results.put("cases", testCases);
