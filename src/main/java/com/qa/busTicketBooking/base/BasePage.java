@@ -127,18 +127,18 @@ public class BasePage {
 			env = System.getProperty("env");
 			System.out.println("Running on Environment: ---->" + env);
 			if(env == null){
-				path = "C:\\Users\\pawan\\Desktop\\Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\config.properties";
+				path = "./Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\config.properties";
 			}
 			else{
 				switch (env) {
 				case "qa":
-					path = "C:\\Users\\pawan\\Desktop\\Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\qa.config.properties";
+					path = "./Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\qa.config.properties";
 					break;
 				case "dev":
-					path = "C:\\Users\\pawan\\Desktop\\Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\dev.config.properties";
+					path = ".\Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\dev.config.properties";
 					break;
 				case "stage":
-					path = "C:\\Users\\pawan\\Desktop\\Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\stage.config.properties";
+					path = ".\Haavish\\BusTicketBookingPOM\\src\\main\\java\\com\\qa\\busTicketBooking\\config\\stage.config.properties";
 					break;
 				default:
 					System.out.println("Please pass the correct env value....");
