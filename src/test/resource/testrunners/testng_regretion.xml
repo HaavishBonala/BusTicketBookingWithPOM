@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hub spot Test automtion regression suite" verbose="1"
+	thread-count="3" parallel="tests">
+
+	<listeners>
+
+
+		<listener
+			class-name="com.qa.busTicketBooking.testListeners.TesultsReportListener" />
+		<listener
+			class-name="com.qa.busTicketBooking.testListeners.AllureReportListener" />
+		<listener
+			class-name="com.qa.busTicketBooking.testListeners.ExtentReportListener" />
+		<!-- <listener class-name="com.qa.dontknow.testlisteners.PdfReportListener"/> -->
+
+
+	</listeners>
+
+	<test name="HubSpot Feature Testing - login - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.busTicketBooking.test.ReviewAndDetailsTest" />
+		</classes>
+	</test>
+
+	<test name="HubSpot Feature Testing - login - firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.qa.busTicketBooking.test.ReviewAndDetailsTest" />
+		</classes>
+	</test>
+</suite>

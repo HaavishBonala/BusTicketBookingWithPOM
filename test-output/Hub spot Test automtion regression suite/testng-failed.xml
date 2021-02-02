@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Hub spot Test automtion regression suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.busTicketBooking.testListeners.TesultsReportListener"/>
+    <listener class-name="com.qa.busTicketBooking.testListeners.AllureReportListener"/>
+    <listener class-name="com.qa.busTicketBooking.testListeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="3" name="HubSpot Feature Testing - login - chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.busTicketBooking.test.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- com.qa.busTicketBooking.test.HomePageTest -->
+    </classes>
+  </test> <!-- HubSpot Feature Testing - login - chrome(failed) -->
+  <test thread-count="3" name="HubSpot Feature Testing - login - firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.busTicketBooking.test.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- com.qa.busTicketBooking.test.HomePageTest -->
+    </classes>
+  </test> <!-- HubSpot Feature Testing - login - firefox(failed) -->
+</suite> <!-- Failed suite [Hub spot Test automtion regression suite] -->
